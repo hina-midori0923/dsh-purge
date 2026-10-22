@@ -28,7 +28,10 @@
   config:
     includeHarnessIdentity: false
     personaPrefix: ""
-    personaSuffix: Your working directory is {{cwd}}.
+    # 新版宿主不再注册 {{cwd}} 变量（工作目录由 working-directory 服务的
+    # 「Current working directory: …」上下文提供）。这里再写变量句会让
+    # renderPrompt 抛 unknown prompt variable，整段提示词组装失败；留空即可。
+    personaSuffix: ""
 
 - id: dsh-purge
   inject: [systemPrompt, tools]

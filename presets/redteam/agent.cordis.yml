@@ -25,7 +25,8 @@
 # ── identity ────────────────────────────────────────────────────────────────
 
 # The preset's own persona, shadowing the deployment default for this agent.
-# `{{model}}` and `{{cwd}}` resolve from the agent's own route and workspace.
+# `{{model}}` resolves from the agent's own route. 工作目录由宿主的
+# working-directory 上下文提供（新版不再注册 `{{cwd}}`，别再往 persona 里写）。
 - id: persona
   name: '@deepseek-ai/dsh-persona'
   config:
