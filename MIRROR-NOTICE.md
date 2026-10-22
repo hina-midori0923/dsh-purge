@@ -1,7 +1,7 @@
 # 镜像说明 / Mirror Notice
 
-本仓库是 **YuJunZhiXue/dsh-purge** 的**全量镜像（mirror）**，
-由 [@mmparko](https://github.com/mmparko) 在上游宣布删库前完整备份，用于存档与分发。
+本仓库基于 **YuJunZhiXue/dsh-purge** 的全量镜像（mirror）继续维护，
+镜像由 [@mmparko](https://github.com/mmparko) 在上游宣布删库前完整备份，用于存档与分发。
 
 > **2026-10-22 状态：** 已核实上游 GitHub 仓库 `YuJunZhiXue/dsh-purge` 与 npm 包 `dsh-purge` 均不存在（404）。本 fork（`hina-midori0923/dsh-purge`）是当前安装与更新来源。
 
