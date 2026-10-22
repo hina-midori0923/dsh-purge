@@ -1,7 +1,9 @@
 # 镜像说明 / Mirror Notice
 
-本仓库是 **[YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge)** 的**全量镜像（mirror）**，
+本仓库是 **YuJunZhiXue/dsh-purge** 的**全量镜像（mirror）**，
 由 [@mmparko](https://github.com/mmparko) 在上游宣布删库前完整备份，用于存档与分发。
+
+> **2026-10-22 状态：** 已核实上游 GitHub 仓库 `YuJunZhiXue/dsh-purge` 与 npm 包 `dsh-purge` 均不存在（404）。本 fork（`hina-midori0923/dsh-purge`）是当前安装与更新来源。
 
 ---
 
@@ -11,15 +13,15 @@
 | --- | --- |
 | 原项目 | **dsh-purge — DeepSeek Harness 破甲**（让所有模型都能破甲，不同模型可换不同提示词） |
 | 原作者 | **YuJunZhiXue**（[@YuJunZhiXue](https://github.com/YuJunZhiXue)） |
-| 原仓库 | <https://github.com/YuJunZhiXue/dsh-purge> |
+| 原仓库 | `YuJunZhiXue/dsh-purge`（已删除，2026-10-22 核实 404） |
 | 原许可证 | MIT License（本仓库 `LICENSE` 原样保留，未做任何改动） |
 
 **本项目的名称、思路、代码、提示词的一切权利与署名均归原作者。**
 本镜像不主张任何原创性，仅承担存档与分发职责，未对原作者内容做任何修改或再授权。
 
-按原 README「[署名要求](https://github.com/YuJunZhiXue/dsh-purge#署名要求)」章节的明确要求：
+按原 README「署名要求」章节的明确要求：
 **借用本项目的名称、思路、代码或提示词，必须署名，并写明来源仓库。** 任何基于本镜像的二开、
-分发、集成，都必须保留本说明与原仓库链接。原项目的非盈利条款同样沿用：**不得用于卖课、
+分发、集成，都必须保留本说明与来源说明（原仓库链接已失效）。原项目的非盈利条款同样沿用：**不得用于卖课、
 卖插件、卖 token、倒卖等收费行为。**
 
 ---
@@ -95,10 +97,7 @@ git rev-parse upstream-snapshot-6c1d638^{tree}
 ```
 
 ```bash
-# 5. 与上游（若仍在线）逐 ref 比对
-git ls-remote https://github.com/YuJunZhiXue/dsh-purge.git | sort > /tmp/up.txt
-git ls-remote https://github.com/mmparko/dsh-purge.git | sort > /tmp/mine.txt
-diff /tmp/up.txt /tmp/mine.txt
+# 5. 上游逐 ref 比对：上游仓库已于 2026-10-22 核实删除（404），此步无法再执行。
 ```
 
 ---
