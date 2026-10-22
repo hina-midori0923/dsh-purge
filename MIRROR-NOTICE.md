@@ -38,10 +38,15 @@
 > 说明：GitHub 禁止向 `refs/pull/*` 推送（`deny updating a hidden ref`），
 > 因此上游的 26 个 PR ref 已转换为同 SHA 的 `archive/pr-*` tag，commit 对象一个不少。
 
-### 相对上游的唯一差异
+### 相对上游的差异
 
-`master` 比上游 `master` **多一个 commit**，即本文件 `MIRROR-NOTICE.md`。
-上游原始内容本身零改动，可通过 `upstream-snapshot-6c1d638` 拿到，diff 命令见第四节。
+备份成立时，`master` 比上游 `master` 只多本文件 `MIRROR-NOTICE.md`；原始备份状态可通过 `upstream-snapshot-6c1d638` 拿到，diff 命令见第四节。
+
+2026-10-22 起，本 fork（`hina-midori0923/dsh-purge`）在镜像基础上加入**本地兼容修复**，并以本仓库作为安装/更新源：
+
+- 适配 DSH 0.2.1-rc.2 取消 `{{cwd}}` 提示词变量（persona-suffix 在宿主 `renderPrompt` 里会抛 `unknown prompt variable "{{cwd}}"`，导致提示词组装失败）
+- `lib/update.js` 的更新源、`package.json` 的 repository / homepage / install 地址均指向本仓库
+- 当前版本 `1.1.73`；上游原作者署名、MIT 许可与非盈利条款不变
 
 ---
 
